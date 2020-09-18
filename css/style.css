@@ -232,3 +232,64 @@ body {
     transition: font-size 0.5s;
   }
 }
+
+/*--------------------------BANNER NAVIGATION STYLE-------------------------------*/
+
+.banner_nav_wrapper {
+    padding: 30px;
+    padding-top: 50px;
+}
+.banner_nav p {
+  font-size: 20px;
+}
+.banner_nav_items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  position: relative;
+}
+.banner_nav_items .item1 {
+  background-image: url("../img/male_skate.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+}
+.banner_nav_items .item2 {
+  background-image: url("../img/women_box.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+}
+.banner_nav_items .item3 {
+  background-image: url("../img/kid_basket.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+}
+.banner_nav_items a {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255,255,255,1);
+  transition: background-color .3s;
+  color: rgb(0,0,0);
+  border-radius: 25px;
+  padding: 10px 30px;
+  margin: 15px;
+}
+.banner_nav_items a:hover {
+  background-color: rgba(255,255,255,0.7);
+  transition: background-color .3s;
+}
