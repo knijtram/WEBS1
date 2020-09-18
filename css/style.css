@@ -1,13 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: roboto;
 }
 
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
 .navbar {
   width: 100vw;
-  font-family: roboto;
   overflow: hidden;
   z-index: 10;
 }
@@ -55,7 +55,8 @@
 .banner_txt {
   width: 350px;
   padding-left: 50px;
-  font-family: roboto;
+}
+.banner_txt p {
   letter-spacing: -1px;
   line-height: 65px;
   text-transform: uppercase;
@@ -64,7 +65,10 @@
   color: #fff;
 }
 .banner_txt a{
-  background-color: #FFF;
-  width: 50px;
-  border-radius: 5px;
+  background-color: rgba(5,5,5, 0.9);
+  border-radius: 4px;
+  color: #FFF;
+  padding: 5px 20px;
+  top: 10px;
+  text-decoration: none;
 }
