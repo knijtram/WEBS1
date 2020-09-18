@@ -38,6 +38,18 @@
   transition: box-shadow 0.5s;
 }
 
+/*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
+
+@media screen and (max-width: 700px) {
+  .banner_txt {
+    width: 270px;
+  }
+  .font-size {
+    font-size: 50px;
+    transition: font-size 0.5s;
+  }
+}
+
 /*--------------------------BANNER STYLE-------------------------------*/
 
 .banner {
@@ -69,6 +81,6 @@
   border-radius: 4px;
   color: #FFF;
   padding: 5px 20px;
-  top: 10px;
+  line-height: 50px;
   text-decoration: none;
 }
