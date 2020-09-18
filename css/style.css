@@ -4,6 +4,10 @@
   font-family: roboto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
 .navbar {
@@ -114,7 +118,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 450px;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: flex-start;
@@ -140,6 +144,54 @@
   padding: 5px 20px;
   line-height: 50px;
   text-decoration: none;
+  transition: color .5s, background-color .5s;
+}
+.banner_txt a:hover {
+  color: black;
+  background-color: white;
+  transition: color .5s, background-color .5s;
+}
+
+.banner2 {
+  background-image: url("../img/nike_shoe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner_txt2 {
+  width: 540px;
+  padding-right: 50px;
+}
+.banner_txt2 p {
+  letter-spacing: -1px;
+  line-height: 65px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80px;
+  color: #fff;
+  transition: font-size 0.5s;
+  text-align: right;
+}
+.banner_txt2 a{
+  background-color: rgba(5,5,5, 0.9);
+  border-radius: 4px;
+  color: #FFF;
+  padding: 5px 20px;
+  margin-left: 50%;
+  line-height: 50px;
+  text-decoration: none;
+  transition: color .5s, background-color .5s;
+}
+.banner_txt2 a:hover {
+  color: black;
+  background-color: white;
+  transition: color .5s, background-color .5s;
 }
 
 /*--------------------------RESPONSIVE BANNER STYLE-------------------------------*/
@@ -151,6 +203,32 @@
   .banner_txt p {
     font-size: 60px;
     line-height: 50px;
+    transition: font-size 0.5s;
+  }
+  .banner_txt2 {
+    width: 470px;
+  }
+  .banner_txt2 p {
+    font-size: 60px;
+    line-height: 50px;
+    transition: font-size 0.5s;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .banner_txt {
+    width: 270px;
+  }
+  .banner_txt p {
+    font-size: 40px;
+    line-height: 35px;
+    transition: font-size 0.5s;
+  }
+  .banner_txt2 {
+    width: 470px;
+  }
+  .banner_txt2 p {
+    font-size: 40px;
+    line-height: 35px;
     transition: font-size 0.5s;
   }
 }
