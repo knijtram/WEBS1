@@ -37,18 +37,74 @@
   box-shadow: inset 0px -2px 0px 0px #000;
   transition: box-shadow 0.5s;
 }
+.navbar img {
+  display: none;
+  height: 30px;
+  padding: 15px;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.burger_check {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  display: none;
+  z-index: 5;
+  cursor: pointer;
+}
+.navbar_burger {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.navbar_burger ul {
+  text-align: center;
+  font-size: 30px;
+}
+.navbar_burger li {
+  list-style-type: none;
+  padding: 20px 20px;
+  text-transform: uppercase;
+}
+.navbar_burger ul a {
+  text-decoration: none;
+  color: #FFF;
+}
+.navbar_burger ul li:hover {
+  color: #DDA;
+  transition: color 0.5s;
+}
+
 
 /*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
 
-@media screen and (max-width: 700px) {
-  .banner_txt {
-    width: 270px;
+@media only screen and (max-width: 700px) {
+  .navbar img {
+    display: block;
   }
-  .font-size {
-    font-size: 50px;
-    transition: font-size 0.5s;
+  .navbar ul {
+    visibility: hidden;
+  }
+  .burger_check {
+    display: block;
+    opacity: 0;
+  }
+  .burger_check:checked + .navbar_burger{
+    visibility: visible;
   }
 }
+
 
 /*--------------------------BANNER STYLE-------------------------------*/
 
@@ -75,6 +131,7 @@
   font-weight: bold;
   font-size: 80px;
   color: #fff;
+  transition: font-size 0.5s;
 }
 .banner_txt a{
   background-color: rgba(5,5,5, 0.9);
@@ -83,4 +140,17 @@
   padding: 5px 20px;
   line-height: 50px;
   text-decoration: none;
+}
+
+/*--------------------------RESPONSIVE BANNER STYLE-------------------------------*/
+
+@media only screen and (max-width: 700px) {
+  .banner_txt {
+    width: 270px;
+  }
+  .banner_txt p {
+    font-size: 60px;
+    line-height: 50px;
+    transition: font-size 0.5s;
+  }
 }
