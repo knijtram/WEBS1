@@ -318,13 +318,51 @@ body {
   background-color: rgba(233,233,233,1);
   width: 100%;
   padding-top: 20%;
+  padding-bottom: 0;
+  transition: padding-bottom 0.5s;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.item_bottom p {
+.item_bottom p.product {
   position: absolute;
   top: 50%; /* center the p vertically */
   transform: translateY(-50%); /* center the p vertically */
+}
+.item_bottom p.beschrijving {
+  position: absolute;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: 100%;
+  opacity: 0;
+}
+.item_bottom p.kleuren {
+  position: absolute;
+  margin-left: 15px;
+  margin-right: 15px;
+  top: 100%;
+  opacity: 0;
+}
+
+.item_bottom:hover {
+  justify-content: flex-start;
+  padding-bottom: 40%;
+  transition: padding-bottom 0.5s;
+}
+.item_bottom:hover > p.product {
+  top: 10%;
+  transform: translateY(0);
+  margin-left: 15px;
+  transition: top 0.5s, transform 0.5s;
+}
+.item_bottom:hover > p.beschrijving {
+  top: 25%;
+  opacity: 1;
+  transition: top 0.5s, opacity 1s;
+}
+.item_bottom:hover > p.kleuren {
+  top: 80%;
+  opacity: 1;
+  transition: top 0.5s, opacity 1s;
 }
 
 /*-----------ITEMS CARD RESPONSIVE-----------*/
@@ -333,5 +371,13 @@ body {
   .item_wrapper {
     padding: 0;
     transition: padding, 0.5s;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .item_wrapper {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .item_bottom {
+    font-size: 11px;
   }
 }
