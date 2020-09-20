@@ -299,14 +299,13 @@ body {
 .item_wrapper {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
-  padding-left: 75px;
-  padding-right: 75px;
+  padding: 0 15vw;
 }
 .item {
   background-color: rgba(44,44,44,1);
   position: relative;
-  padding-top: 125%;
-  margin: 5px;
+  padding-top: 130%;
+  margin: 1px;
   border-radius: 15px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -326,4 +325,13 @@ body {
   position: absolute;
   top: 50%; /* center the p vertically */
   transform: translateY(-50%); /* center the p vertically */
+}
+
+/*-----------ITEMS CARD RESPONSIVE-----------*/
+
+@media only screen and (max-width: 1300px) {
+  .item_wrapper {
+    padding: 0;
+    transition: padding, 0.5s;
+  }
 }
