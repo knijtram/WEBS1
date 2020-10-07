@@ -41,13 +41,13 @@
           <label for="telefoonnummer"> Telefoonnummer </label>
           <input type="tel" id="telnummer" name="telefoonnummer" placeholder="Telefoonnummer">
           <label for="male"> Man </label>
-          <input type="radio" id="man" name="male">
+          <input type="radio" id="man" name="gender" value="male">
           <label for="female"> Vrouw </label>
-          <input type="radio" id="woman" name="female">
+          <input type="radio" id="woman" name="gender" value="female">
           <label for="other"> Anders </label>
-          <input type="radio" id="dif" name="other">
+          <input type="radio" id="dif" name="gender" value="other">
           <label for="birthdate"> Geboortedatum </label>
-          <input type="date" id="bdate" name="birthdate" placeholder="dd-mm-jjjj">
+          <input type="date" id="bdate" name="birthdate" placeholder="dd-mm-jjjj" onfocus="(this.type='date')">
 
           <input type="submit" value="Verzenden">
 
