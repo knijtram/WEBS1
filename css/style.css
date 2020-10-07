@@ -92,7 +92,7 @@ body {
   text-decoration: none;
   color: #FFF;
 }
-.navbar_burger ul li:hover {
+.navbar_burger ul li a:hover {
   color: #DDA;
   transition: color 0.5s;
 }
