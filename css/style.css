@@ -364,6 +364,10 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+.item_clickable {
+  color: black;
+  text-decoration: none;
+}
 .item_bottom {
   display: flex;
   justify-content: center;
