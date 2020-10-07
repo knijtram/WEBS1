@@ -533,7 +533,7 @@ body {
   }
 }
 
-/*-----------Contact-----------*/
+/*-----------CONTACT STYLE-----------*/
 
 .contact_container {
   width: 100%;
@@ -667,4 +667,33 @@ input[type=date] {
   background-color: black;
   color: white;
   font-weight: 600;
+}
+
+.submit_button {
+  background: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+  border:none;
+  padding: 12px 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.submit_button:hover {
+  color: rgba(200,200,200,1);
+  cursor: pointer;
+}
+
+/*----------REDIRECT PAGE STYLE---------------*/
+
+.redirect_text {
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  width: 100vw;
+  background: rgba(255,255,255,1);
 }
