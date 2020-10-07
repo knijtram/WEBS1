@@ -607,11 +607,13 @@ input[type=date] {
   display: flex;
 }
 .item_img {
+  width: calc(100vw - 320px);
+  height: 650px;
+}
+.item_img_rv {
   background-image: url("../img/nike_shoe.jpg");
   background-position: -200px;
   background-size: cover;
-  width: calc(100vw - 320px);
-  height: 650px;
 }
 .item_order {
   width: 280px;
