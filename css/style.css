@@ -610,7 +610,7 @@ input[type=date] {
   width: calc(100vw - 320px);
   height: 650px;
 }
-.item_img_rv {
+.item_img_nr {
   background-image: url("../img/nike_shoe.jpg");
   background-position: -200px;
   background-size: cover;
