@@ -4,17 +4,19 @@
   padding: 0;
   margin: 0;
   font-family: 'Roboto';
+  /* border: 1px solid red; */
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
+  position: relative;
   z-index: 10;
 }
 .navbar ul {
@@ -65,7 +67,7 @@ body {
   cursor: pointer;
 }
 .navbar_burger {
-  width: 100vw;
+  width: 99%;
   height: 100vh;
   top: 0;
   z-index: 2;
@@ -332,7 +334,7 @@ body {
   -webkit-align-items: center;
   margin-top: 20px;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background: rgba(255,255,255,1);
   color: rgba(44,44,44);
   position: relative;
@@ -607,22 +609,25 @@ input[type=date] {
   display: flex;
 }
 .item_img {
-  width: calc(100vw - 320px);
+  width: calc(100% - 320px);
   height: 650px;
 }
 .item_img_nr {
   background-image: url("../img/nike_shoe.jpg");
-  background-position: -200px;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .item_order {
   width: 280px;
   margin-bottom: 50px;
   padding: 20px;
-  height: calc(100vh - 120px);
+  padding-top: 80px;
+  height: calc(100vh - 60px);
   background: white;
   position: fixed;
   right: 0;
+  transform: translateY(-60px);
 }
 
 .item_title {
@@ -657,7 +662,7 @@ input[type=date] {
   padding: 10px 30px;
   font-size: 14px;
   text-align: center;
-  box-shadow:inset 0px 0px 0px 0.5px rgba(240,240,240,1);
+  box-shadow: inset 0px 0px 0px 0.5px rgba(240,240,240,1);
 }
 .maat_items label:hover {
   background-color: black;
@@ -672,7 +677,7 @@ input[type=date] {
 .submit_button {
   background: rgba(0,0,0,1);
   color: rgba(255,255,255,1);
-  border:none;
+  border: none;
   padding: 12px 40px;
   font-size: 15px;
   font-weight: 500;
@@ -680,6 +685,75 @@ input[type=date] {
 .submit_button:hover {
   color: rgba(200,200,200,1);
   cursor: pointer;
+}
+
+.item_view_description {
+  padding: 30px;
+  margin: 0 50px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+}
+.item_view_description_wrapper {
+  width: 500px;
+  align-self: flex-start;
+}
+.description {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 100;
+}
+.description_text {
+  font-size: 20px;
+  font-weight: 300;
+}
+.img_shoe {
+  width: 450px;
+  padding: 0 50px;
+  object-fit: contain;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*------------RESPONSIVE ITEM DESCRIPTION STYLE-------------*/
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    position: static;
+  }
+
+  .item_view_wrapper {
+    display: block;
+  }
+  .item_img {
+    width: 100%;
+  }
+  .item_order {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 0;
+    position: relative;
+    transform: translateY(0);
+  }
+
+  .maat_items {
+    grid-template-columns: repeat(5, 20%);
+  }
+
+  .item_view_description {
+    width: fit-content;
+    display: block;
+  }
+  .item_view_description_wrapper {
+    width: 100%;
+  }
+  .img_shoe {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*----------REDIRECT PAGE STYLE---------------*/
@@ -694,6 +768,6 @@ input[type=date] {
   text-align: center;
   font-size: 18px;
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background: rgba(255,255,255,1);
 }
