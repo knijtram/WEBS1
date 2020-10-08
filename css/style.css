@@ -486,12 +486,12 @@ body {
   background-size: cover;
 }
 .item_nike_yw {
-  background-image: url("../img/Nike_Shoe_Yellow_White.jpg");
+  background-image: url("../img/Nike_Shoe_Yellow_White(small).jpg");
   background-position: center;
   background-size: cover;
 }
 .item_nike_print {
-  background-image: url("../img/Nike_Shoe_Print.jpg");
+  background-image: url("../img/Nike_Shoe_Print(small).jpg");
   background-position: center;
   background-size: cover;
 }
@@ -501,12 +501,12 @@ body {
   background-size: cover;
 }
 .item_nike_shirt_red {
-  background-image: url("../img/Nike_Shirt_Sport_Red.jpg");
+  background-image: url("../img/Nike_Shirt_Sport_Red(small).jpg");
   background-position: center;
   background-size: cover;
 }
 .item_shirt_bwb {
-  background-image: url("../img/Shirt_Black_White_Blue.jpg");
+  background-image: url("../img/Shirt_Black_White_Blue(small).jpg");
   background-position: center;
   background-size: cover;
 }
