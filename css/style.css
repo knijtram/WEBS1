@@ -11,6 +11,26 @@ body {
   /* overflow-x: hidden; */
 }
 
+/*--------------------------BACKGROUND ANIMATION STYLE(nog niks mee gedaan)-------------------------------*/
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.gradient_color {
+  background: linear-gradient(-45deg, #FFFFFF, #FFEFEF, #FCFCFC, #FFFFFF);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+}
+
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
 .navbar {
@@ -335,7 +355,6 @@ body {
   margin-top: 20px;
   height: 50px;
   width: 100%;
-  background: rgba(255,255,255,1);
   color: rgba(44,44,44);
   position: relative;
   z-index: 10;
@@ -612,8 +631,38 @@ input[type=date] {
   width: calc(100% - 320px);
   height: 650px;
 }
-.item_img_nr {
+.item_img_n_r {
   background-image: url("../img/nike_shoe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_img_n_v {
+  background-image: url("../img/Nike_Shoe_Yellow_White.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_img_n_p {
+  background-image: url("../img/Nike_Shoe_Print.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_img_ua_ts {
+  background-image: url("../img/puma_pak.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_img_a_s {
+  background-image: url("../img/Shirt_Black_White_Blue.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_img_n_s {
+  background-image: url("../img/Nike_Shirt_Sport_Red.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -708,7 +757,7 @@ input[type=date] {
   font-size: 20px;
   font-weight: 300;
 }
-.img_shoe {
+.img {
   width: 450px;
   padding: 0 50px;
   object-fit: contain;
