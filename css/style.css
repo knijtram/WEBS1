@@ -33,13 +33,13 @@ body {
 
 /*--------------------------NAVIGATION BAR STYLE-------------------------------*/
 
-.navbar {
+nav {
   width: 100%;
   overflow: hidden;
   position: relative;
   z-index: 10;
 }
-.navbar ul {
+nav ul {
   display: flex;
   justify-content: center;
   -webkit-justify-content: center;
@@ -55,19 +55,19 @@ body {
   color: #000;
   text-decoration: none;
 }
-.navbar li {
+nav li {
   list-style-type: none;
   padding: 20px 20px;
 }
-.navbar ul a {
+nav ul a {
   text-decoration: none;
   color: #333;
 }
-.navbar li:hover {
+nav li:hover {
   box-shadow: inset 0px -2px 0px 0px #000;
   transition: box-shadow 0.5s;
 }
-.navbar img {
+nav img {
   display: none;
   height: 30px;
   padding: 15px;
@@ -123,10 +123,10 @@ body {
 /*--------------------------RESPONSIVE NAVIGATION BAR STYLE-------------------------------*/
 
 @media only screen and (max-width: 700px) {
-  .navbar img {
+  nav img {
     display: block;
   }
-  .navbar ul {
+  nav ul {
     visibility: hidden;
   }
   .burger_check {
@@ -283,9 +283,9 @@ body {
 }
 .banner_nav_items {
   display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
   margin-top: 15px;
   position: relative;
 }
@@ -313,18 +313,8 @@ body {
   width: 500px;
   height: 700px;
 }
-.banner_nav_items .item3 {
-  background-image: url("../img/kid_basket.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  width: 500px;
-  height: 700px;
-}
+
+
 .banner_nav_items a {
   text-decoration: none;
   position: absolute;
@@ -769,7 +759,7 @@ input[type=date] {
 /*------------RESPONSIVE ITEM DESCRIPTION STYLE-------------*/
 
 @media only screen and (max-width: 700px) {
-  .navbar {
+  nav {
     position: static;
   }
 
