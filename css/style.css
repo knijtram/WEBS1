@@ -873,10 +873,6 @@ input[type=date] {
 /*------------RESPONSIVE ITEM DESCRIPTION STYLE-------------*/
 
 @media only screen and (max-width: 700px) {
-  nav {
-    position: static;
-  }
-
   .item_view_wrapper {
     display: block;
   }
@@ -942,6 +938,7 @@ input[type=date] {
   font-size: 120px;
   font-weight: 600;
   line-height: 150px;
+  padding: 5px;
 }
 
 
@@ -1035,6 +1032,47 @@ input[type=date] {
   z-index: 10;
 }
 
+/* RESPONSIVE ABOUT US STYLE START */
+@media only screen and (max-width: 950px) {
+  .bottom_tekst {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .about_us_banner2_wrapper {
+    width: auto;
+  }
+  .about_us_banner_panos {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .about_us_banner_martijn {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .vierkant {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about_us_banner2 {
+    padding: 0 5px 0 5px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bottom_tekst {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .video_banner {
+    transform: translateY(-80px);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .bottom_tekst {
+    font-size: 40px;
+  }
+}
+/* RESPONSIVE ABOUT US STYLE END */
 
 
 /*--------------------------FADE IN ANIMATION-------------------------------*/
