@@ -65,8 +65,8 @@ nav .nav-menu li:hover {
   box-shadow: inset 0px -2px 0px 0px #000;
   transition: box-shadow 0.5s;
 }
-/* DROPDOWN MENU STYLE START */
 
+/* DROPDOWN MENU STYLE START */
 .dropdown {
   display: none;
   background: rgba(255,255,255,1);
@@ -92,8 +92,8 @@ nav .nav-menu li:hover .dropdown {
   position: absolute;
   z-index: 15;
 }
-
 /* DROPDOWN MENU STYLE END */
+
 nav img {
   display: none;
   height: 30px;
@@ -513,7 +513,32 @@ nav img {
   -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
+.orange_dot {
+  height: 15px;
+  width: 15px;
+  background-image: linear-gradient(to bottom right, rgba(255,165,0,1), rgba(0,0,0,0.1));
+  border-radius: 50%;
+  position: absolute;
+  top: calc(80% - 14px);
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+}
+.gray_dot {
+  height: 15px;
+  width: 15px;
+  background-image: linear-gradient(to bottom right, rgba(242,241,239,1), rgba(0,0,0,0.1));
+  border-radius: 50%;
+  position: absolute;
+  top: calc(80% - 14px);
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+}
 
+/* MEN */
 .item_revolt {
   background-image: url("../img/nike_revolt.jpg");
   background-position: center;
@@ -543,6 +568,44 @@ nav img {
   background-image: url("../img/Shirt_Black_White_Blue(small).jpg");
   background-position: center;
   background-size: cover;
+}
+
+/* WOMEN */
+.item_unsplash_women {
+  background-image: url("../img/adidas_unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_strepper_women {
+  background-image: url("../img/adidas_strepper.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_bright_women {
+  background-image: url("../img/converse_bright.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_leggings_women {
+  background-image: url("../img/nike_leggings.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_hoodie_women {
+  background-image: url("../img/adidas_hoodie.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item_nike_shirt_women {
+  background-image: url("../img/nike_shirt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*-----------ITEMS CARD RESPONSIVE-----------*/
