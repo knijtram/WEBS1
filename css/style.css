@@ -893,7 +893,7 @@ input[type=date] {
   }
 
   .item_view_description {
-    width: fit-content;
+    width: unset;
     display: block;
   }
   .item_view_description_wrapper {
@@ -902,6 +902,9 @@ input[type=date] {
   .img_shoe {
     width: 100%;
     padding: 0;
+  }
+  .img {
+    width: 100%;
   }
 }
 
