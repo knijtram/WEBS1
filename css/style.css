@@ -895,6 +895,7 @@ input[type=date] {
   .item_view_description {
     width: unset;
     display: block;
+    padding: 0;
   }
   .item_view_description_wrapper {
     width: 100%;
