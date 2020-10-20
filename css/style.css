@@ -893,6 +893,9 @@ input[type=date] {
   .maat_items {
     grid-template-columns: repeat(5, 20%);
   }
+  .maat_items label {
+    padding: 10px 0;
+  }
 
   .item_view_description {
     width: unset;
@@ -909,6 +912,11 @@ input[type=date] {
   .img {
     width: 100%;
     padding: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .maat_items {
+    grid-template-columns: repeat(3, 33%);
   }
 }
 
@@ -1123,23 +1131,6 @@ input[type=date] {
   }
 }
 
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
-
 /*----------REDIRECT PAGE STYLE---------------*/
 
 .redirect_text {
@@ -1151,7 +1142,7 @@ input[type=date] {
   -webkit-align-items: center;
   text-align: center;
   font-size: 18px;
-  height: 50px;
+  height: 90vh;
   width: 100%;
   background: rgba(255,255,255,1);
 }
