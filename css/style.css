@@ -924,6 +924,9 @@ input[type=date] {
 
 .about_us_banner {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video_banner {
@@ -937,7 +940,6 @@ input[type=date] {
 
 .video_tekst {
   position: absolute;
-  top: 15%;
   color: rgba(255,255,255,1);
 }
 .top_tekst {
