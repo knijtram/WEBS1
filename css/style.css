@@ -753,7 +753,7 @@ form {
   margin: 25px;
 }
 
-input[type=text], input[type=email], input[type=tel], textarea[type=subject] {
+input[type=text], input[type=email], input[type=tel], #subj {
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
@@ -764,7 +764,7 @@ input[type=text], input[type=email], input[type=tel], textarea[type=subject] {
   background-color: rgba(211,22,35,0.03);
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea[type=subject]:focus {
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, #subj:focus {
   outline: none;
   border: 1px solid rgba(255,0,0,0.5);
   background-color: rgba(255,0,0,0.1);
