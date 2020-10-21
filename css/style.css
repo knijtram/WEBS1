@@ -755,7 +755,7 @@ form {
   margin: 25px;
 }
 
-input[type=text], input[type=email], input[type=tel], #subj {
+.container input[type=text], .container input[type=email], .container input[type=tel], #subj {
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
@@ -766,13 +766,13 @@ input[type=text], input[type=email], input[type=tel], #subj {
   background-color: rgba(211,22,35,0.03);
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, #subj:focus {
+.container input[type=text]:focus, .container input[type=email]:focus, .container input[type=tel]:focus, #subj:focus {
   outline: none;
   border: 1px solid rgba(255,0,0,0.5);
   background-color: rgba(255,0,0,0.1);
 }
 
-input[type=submit] {
+.container input[type=submit] {
   width: 100%;
   border: none;
   padding: 10px;
@@ -783,7 +783,7 @@ input[type=submit] {
   background-color: rgba(211,22,35,0.9);
 }
 
-input[type=submit]:hover {
+.container input[type=submit]:hover {
   background-color: rgba(211,22,35,0.8);
   cursor: pointer;
 }
