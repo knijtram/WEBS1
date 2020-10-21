@@ -697,6 +697,7 @@ footer p {
 
 .bulletpoints_icons li {
   line-height: 2;
+  margin-top: 10px;
 }
 
 .bulletpoints {
@@ -707,6 +708,7 @@ footer p {
 
 .bulletpoints li {
   line-height: 2.2;
+  margin-top: 10px;
 }
 
 .fa-map-marker, .fa-mobile-phone, .fa-envelope {
