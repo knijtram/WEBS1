@@ -1138,7 +1138,7 @@ input[type=text], input[type=email], input[type=tel], textarea[type=subject] {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
 
   }
   100% {
