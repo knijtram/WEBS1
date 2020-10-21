@@ -750,7 +750,7 @@ footer p {
   border-radius: 5px;
 }
 
-form {
+.container form {
   padding: 25px;
   margin: 25px;
 }
