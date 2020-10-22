@@ -1140,11 +1140,11 @@ footer p {
   }
   .about_us_banner_panos {
     flex-direction: column;
-    padding: 5px;
+    padding: 15px;
   }
   .about_us_banner_martijn {
     flex-direction: column;
-    padding: 5px;
+    padding: 15px;
   }
   .vierkant {
     padding: 10px;
